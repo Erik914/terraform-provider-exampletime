@@ -8,6 +8,6 @@ terraform {
 
 provider "exampletime" {}
 
-output "timestamp" {
-  value = provider::exampletime::rfc3339_parse("2023-07-25T23:43:16Z")
+output "label" {
+  value = provider::exampletime::label_split("test1/test2/test3")
 }
